@@ -1,8 +1,8 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
-import ReactDOM from "react-dom/";
 import "./index.scss";
-import { createBrowserRouter, Route, RouterProvider } from "react-router-dom";
+import ReactDOM from "react-dom/client";
+import { createBrowserRouter } from "react-router-dom";
+import { RouterProvider } from "react-router";
 import Login from "./views/Login/Login";
 import Home from "./views/Home/Home";
 import Products from "./views/Products/Products";
@@ -27,8 +27,10 @@ const router = createBrowserRouter([
     element: <Pay data={PRODUCTS_MOCK} />,
   },
 ]);
+
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <RouterProvider router={router} />
+
   </React.StrictMode>
 );

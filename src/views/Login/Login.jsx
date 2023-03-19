@@ -1,7 +1,7 @@
 import React from "react";
 import "./index.scss";
 import Header from "../../components/Header/Header";
-import  Link  from "react-router-dom";
+import  {Link}  from "react-router-dom";
 
 const Login = () => {
   return (
@@ -11,7 +11,7 @@ const Login = () => {
         <h1>Acesse com seu login ou cadastre-se!</h1>
         <h2>você pode entrar com o seu CPF</h2>
         <div className="login__input-wrapper">
-          <label htmlFor="name">Digite seu CPF:</label>
+          <label htmlFor="name">Digite seu Nome:</label>
           <input type="text" placeholder="Nome completo" id="name" className="login__input-name"/>
           <label htmlFor="password">Senha:</label>
           <input type="password" id="password" placeholder="********" />
